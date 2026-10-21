@@ -1,0 +1,260 @@
+/* ==========================================================================
+   EDITORIAL CREAM DESIGN SYSTEM — NENAVATH SAVITHA PORTFOLIO
+   ========================================================================== */
+
+:root {
+  /* Warm Ivory & Cream Surfaces */
+  --bg-primary: #FAF8F5;
+  --bg-surface: #FFFFFF;
+  --bg-muted: #F3EFEA;
+  --bg-subtle: #EBE5DC;
+  --bg-paper: #F6F3EE;
+
+  /* Editorial Accents */
+  --accent-yellow: #FEF08A;
+  --accent-yellow-dark: #EAB308;
+  --accent-lavender: #E9D5FF;
+  --accent-lavender-dark: #A855F7;
+  --accent-blue: #BAE6FD;
+  --accent-blue-dark: #0284C7;
+  --accent-mint: #D1FAE5;
+  --accent-peach: #FFEDD5;
+
+  /* Typography Colors */
+  --text-dark: #0F172A;
+  --text-body: #334155;
+  --text-muted: #64748B;
+  --text-subtle: #94A3B8;
+
+  /* Editorial Borders & Shadows */
+  --border-editorial: #0F172A;
+  --border-subtle: #E2DDD5;
+  --border-light: rgba(15, 23, 42, 0.12);
+  --shadow-editorial: 4px 4px 0px #0F172A;
+  --shadow-editorial-sm: 2px 2px 0px #0F172A;
+  --shadow-editorial-lg: 6px 6px 0px #0F172A;
+  --shadow-soft: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+
+  /* Typography Stack */
+  --font-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Measurements */
+  --nav-height: 76px;
+  --max-width: 1240px;
+}
+
+/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Subtle Editorial Background Grid & Texture */
+.bg-editorial-grid {
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--text-dark);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+/* Editorial Buttons */
+.btn-editorial-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  background-color: var(--accent-yellow);
+  border: 2px solid var(--border-editorial);
+  border-radius: 9999px;
+  box-shadow: var(--shadow-editorial);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-editorial-primary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-editorial-lg);
+  background-color: #FDE047;
+}
+
+.btn-editorial-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.btn-editorial-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: #FFFFFF;
+  border: 2px solid var(--border-editorial);
+  border-radius: 9999px;
+  box-shadow: var(--shadow-editorial);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-editorial-secondary:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-editorial-lg);
+  background-color: var(--bg-muted);
+}
+
+.btn-editorial-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* Editorial Card Base */
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 2px solid var(--border-editorial);
+  border-radius: 16px;
+  box-shadow: var(--shadow-editorial);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.editorial-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-editorial-lg);
+}
+
+/* Section Header Typography */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  background-color: var(--accent-lavender);
+  border: 1.5px solid var(--border-editorial);
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.section-title-editorial {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle-editorial {
+  font-size: 1.15rem;
+  color: var(--text-body);
+  max-width: 640px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Playful Sticker Badge */
+.sticker-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1.5px solid var(--border-editorial);
+  border-radius: 8px;
+  box-shadow: var(--shadow-editorial-sm);
+  background-color: var(--accent-yellow);
+  color: var(--text-dark);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-yellow);
+  color: var(--text-dark);
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 3px solid #0F172A;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
