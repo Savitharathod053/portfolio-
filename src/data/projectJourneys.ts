@@ -22,6 +22,9 @@ export interface ProjectJourneyData {
   title: string;
   category: string;
   tagline: string;
+  description: string;
+  architectureNotes?: string;
+  tags: string[];
   status: 'Prototype' | 'Completed' | 'In Development';
   accentTheme: 'purple' | 'cyan' | 'violet' | 'emerald' | 'yellow';
   links: {
@@ -79,6 +82,9 @@ export const PROJECT_JOURNEYS: ProjectJourneyData[] = [
     title: 'Project Guide',
     category: 'AI Project Advisor',
     tagline: 'AI-Assisted Idea Structuring, Dataset Discovery & Milestone Architecture',
+    description: 'An AI-assisted project scoping framework that converts open-ended student ideas into structured, deadline-aware milestones, verified datasets, and actionable architectures.',
+    architectureNotes: 'Explores Gemini API for structured planning outputs; deterministic prompt schemas prevent hallucinations and ensure steady milestones.',
+    tags: ['Python', 'Gemini API', 'Prompt Engineering', 'Academic Planning', 'AI Integration', 'Dataset Discovery'],
     status: 'Prototype',
     accentTheme: 'violet',
     links: {
@@ -214,6 +220,9 @@ export const PROJECT_JOURNEYS: ProjectJourneyData[] = [
     title: 'Campus-Flow',
     category: 'Full Stack & Operations',
     tagline: 'College Event Lifecycle & Automated QR Registration Platform',
+    description: 'A centralized platform managing the entire college event lifecycle: organizer approval, event publication, student registration, payment verification (transaction ID & screenshot review), and automated QR-based ticket generation.',
+    architectureNotes: 'Role-based dashboards for students, organizers, HODs, and administrators; roll-number-based student login against a preloaded college dataset; multi-day event handling.',
+    tags: ['Web & Backend', 'Role-Based Access', 'QR Ticketing', 'Payment Verification', 'Railway'],
     status: 'Completed',
     accentTheme: 'cyan',
     links: {
@@ -348,6 +357,9 @@ export const PROJECT_JOURNEYS: ProjectJourneyData[] = [
     title: 'VibeDoubts',
     category: 'AI/ML & Code Intelligence',
     tagline: 'AI-Powered GitHub Repository Comprehension & Context-Aware Code Q&A',
+    description: 'An intelligent web platform where users submit a GitHub repository and ask questions about unfamiliar code, helping students and developers understand complex codebases faster.',
+    architectureNotes: 'Planned features: repository structure exploration, AI explanations of selected code & related files, context-aware Q&A, and bug-investigation support with relevant repository context.',
+    tags: ['React', 'JavaScript', 'HTML/CSS', 'Repository Analysis', 'Code Q&A'],
     status: 'In Development',
     accentTheme: 'purple',
     links: {
@@ -481,6 +493,9 @@ export const PROJECT_JOURNEYS: ProjectJourneyData[] = [
     title: 'VayuVision',
     category: 'AI/ML & Geospatial Decision Support',
     tagline: 'Hazard Zone Identification & Emergency Disaster Response Prioritization',
+    description: 'An AI/ML approach for disaster management to identify hazard-prone habitations, assess vulnerability, and prioritise locations needing urgent evaluation or relocation support (SIH 2026 problem statement). Explores Indian geospatial datasets with hazard indicators and designs 4-tier risk classification.',
+    architectureNotes: 'ML workflow spanning geospatial data preprocessing, feature selection, risk classification (Low, Moderate, High, Critical), and decision support outputs.',
+    tags: ['AI/ML', 'Python', 'Geospatial Data', 'Disaster Response', 'Risk Classification', 'SIH 2026'],
     status: 'Prototype',
     accentTheme: 'emerald',
     links: {
@@ -616,6 +631,9 @@ export const PROJECT_JOURNEYS: ProjectJourneyData[] = [
     title: 'Project Guard',
     category: 'AI Academic Planning & Progress Guard',
     tagline: 'AI-Assisted Academic Project Planner & Dataset Discovery System',
+    description: 'Born from real team-coordination challenges in college projects, converting project titles and descriptions into structured, deadline-aware development tasks with suggested resources (tools, component links, datasets, learning materials).',
+    architectureNotes: 'Explored Gemini API for AI-generated planning outputs; debugged and resolved inconsistent recommendations across successive project inputs.',
+    tags: ['Python', 'Gemini API', 'Academic Planning', 'AI Integration', 'Dataset Discovery'],
     status: 'Completed',
     accentTheme: 'yellow',
     links: {
