@@ -22,7 +22,7 @@ export function Education() {
       highlights: [
         'Specialization in AI/ML fundamentals, data preprocessing, and classification.',
         'Core computer science foundations: Data Structures, OOP (Java & Python), Database Integration.',
-        'Active prototyper: built Campus Flow and Project Guard.',
+        'Active prototyper: built Campus Flow and Project Guide.',
       ],
       tag: 'Currently Enrolled (2nd Year)',
     },

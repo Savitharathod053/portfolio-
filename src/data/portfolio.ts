@@ -63,7 +63,7 @@ export const PORTFOLIO_CONFIG = {
     bioShort: "AI/ML engineering student (B.Tech, second year, CGPA 9.03) at Vardhaman College of Engineering. Hands-on with Python, web technologies, workflow automation, and AI API integration; seeking Software Development or AI/ML internship opportunities.",
     bioExtended: [
       "I am an AI/ML engineering student (B.Tech, second year, CGPA 9.03) at Vardhaman College of Engineering who turns real student and developer challenges into practical software prototypes.",
-      "My hands-on experience spans Python, web & backend technologies, workflow and role-based access design, and AI-assisted development (Antigravity, ChatGPT) for research, prototyping, debugging, and testing. From SIH 2026 disaster management intelligence (VayuVision) to college event lifecycle platforms (Campus Flow) and AI project planners (Project Guard), I focus on building high-utility, resilient systems."
+      "My hands-on experience spans Python, web & backend technologies, workflow and role-based access design, and AI-assisted development (Antigravity, ChatGPT) for research, prototyping, debugging, and testing. From SIH 2026 disaster management intelligence (VayuVision) to college event lifecycle platforms (Campus Flow) and AI project guides (Project Guide), I focus on building high-utility, resilient systems."
     ],
     resumePath: "/resume.pdf",
     location: "Hyderabad, Telangana, India",
@@ -153,8 +153,8 @@ export const PORTFOLIO_CONFIG = {
       visualTheme: "cyan",
     },
     {
-      id: "project-guard",
-      title: "Project Guard",
+      id: "project-guide",
+      title: "Project Guide",
       tagline: "AI-Assisted Academic Project Planner & Dataset Discovery",
       description: "Born from real team-coordination challenges in college projects, converting project titles and descriptions into structured, deadline-aware development tasks with suggested resources (tools, component links, datasets, learning materials).",
       architectureNotes: "Explored Gemini API for AI-generated planning outputs; debugged and resolved inconsistent recommendations across successive project inputs.",

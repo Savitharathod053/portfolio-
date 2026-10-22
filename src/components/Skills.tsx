@@ -50,7 +50,7 @@ const PERIODIC_SKILLS: PeriodicSkill[] = [
     accentColor: '#0284C7',
     span: 'standard',
     description: 'Prompt engineering, structured AI planning outputs, and debugged multi-turn context.',
-    experience: 'Project Guard',
+    experience: 'Project Guide',
   },
   {
     id: 'java',

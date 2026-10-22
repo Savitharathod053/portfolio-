@@ -18,7 +18,7 @@ An editorial, cream-styled developer portfolio featuring an interactive periodic
    - Centralizes the event lifecycle with organizer approvals, roll-number authenticated student dashboards, payment verification, and automated QR-based ticketing.
    - [GitHub Repository](https://github.com/Savitharathod053/Campus-Flow) &bull; Deployed on Railway
 
-3. **[Project Guard](https://github.com/Savitharathod053/AI-Project-Guide)** — AI-Assisted Academic Project Planner & Dataset Discovery
+3. **[Project Guide](https://github.com/Savitharathod053/AI-Project-Guide)** — AI-Assisted Academic Project Planner & Dataset Discovery
    - Moves student teams from raw ideas to structured, deadline-aware task breakdowns and recommended tools/datasets using the Gemini API.
 
 4. **[VibeDoubts](https://github.com/Savitharathod053/VibeDoubts)** — AI-Powered GitHub Repository Analysis & Code Q&A Platform
